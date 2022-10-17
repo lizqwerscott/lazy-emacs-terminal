@@ -33,17 +33,13 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-(use-package doom-modeline
-  :ensure t
-  :hook (after-init . doom-modeline-mode)
-  :config
-  (setq doom-modeline-buffer-file-name-style
-        'file-name)
-  (setq doom-modeline-continuous-word-count-modes '(markdown-mode gfm-mode org-mode)))
-
-;; (use-package nyan-mode
+;; (use-package doom-modeline
 ;;   :ensure t
-;;   :hook (doom-modeline-mode . nyan-mode))
+;;   :hook (after-init . doom-modeline-mode)
+;;   :config
+;;   (setq doom-modeline-buffer-file-name-style
+;;         'file-name)
+;;   (setq doom-modeline-continuous-word-count-modes '(markdown-mode gfm-mode org-mode)))
 
 ;; Show the current function name in the header line
 ;; (which-function-mode)

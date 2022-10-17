@@ -37,6 +37,12 @@
 ;;(setq debug-on-error t)
 (require 'init-package)
 (require 'init-startup)
+
+(require 'server)
+(setq server-use-tcp t)
+(setq server-host "0.0.0.0")
+(setq server-port 9877)
+
 (require 'keybinding)
 (require 'init-edit)
 (require 'init-ui)
